@@ -1,0 +1,23 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/settings_header">
+
+        <EditTextPreference
+            app:key="url"
+            app:title="@string/url_title"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue="https://www.lemonde.fr/rss/une.xml"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sync_header">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="@string/sync_title" />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
